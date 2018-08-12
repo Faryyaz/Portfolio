@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
     styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
-    
+    skills = [
+        {
+            name: 'Laravel',
+            class: 'fab fa-laravel'
+        },
+        {
+            name: 'Laravel',
+            class: 'fab fa-laravel'
+        },
+        {
+            name: 'Laravel',
+            class: 'fab fa-laravel'
+        }
+    ];
+    // skills = ['test', 'test 1'];
 }
