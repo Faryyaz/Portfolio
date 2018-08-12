@@ -8,10 +8,10 @@ $color-darker: #222;
 
 .box {
     &-skew {
-        transform: skew(5deg);
+        transform: skew(-5deg);
     }
     &-unskew {
-        transform: skew(-5deg);
+        transform: skew(5deg);
     }
 }
 
