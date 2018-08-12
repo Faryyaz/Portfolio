@@ -6,6 +6,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HeroComponent } from './hero/hero.component';
 import { ObjectivesComponent } from './objectives/objectives.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
     MenuComponent,
     HeroComponent,
     ObjectivesComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule
