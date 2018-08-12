@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+$color-darker: #222;
+
+.bg-darker {
+    background-color: $color-darker;
+}
+
+.box {
+    &-skew {
+        transform: skew(5deg);
+    }
+    &-unskew {
+        transform: skew(-5deg);
+    }
+}
+
+.btn {
+    border-radius: 0;
+    transform: skew(-5deg);
+
+    & span {
+        display: block;
+        transform: skew(5deg);
+    }
+}
