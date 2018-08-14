@@ -1,19 +1,13 @@
-<div class="row">
-  <div class="col-md-3" *ngFor="let skill of skills">
-      <i class="fab fa-laravel fa-3x"></i>
-      <br>
-      <b>
-          Laravel
-      </b>
-  </div>
-</div>
-<!-- <div class="card-deck">
-  <div class="card bg-dark text-white">
+<div class="row mx-4 mt-4">
+  <div class="col-lg-2 col-md-3" *ngFor="let skill of skills">
+  <div class="card bg-darker text-white my-3 card-min">
     <div class="card-body">
-      <i class="fab fa-laravel fa-3x"></i>
+      <i class="{{ skill.classes }} fa-3x"></i>
     </div>
     <div class="card-footer">
-      Laravel
+      {{ skill.name }}
     </div>
   </div>
-</div> -->
+</div>
+
+</div>

@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
     styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
-    @Input() skills: [{ name: string, class: string }];
+    @Input() skills: [{ name: string, classes: string }];
 }
