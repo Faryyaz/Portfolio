@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio';
+  skills = [
+    {
+        name: 'Laravel',
+        class: 'fab fa-laravel'
+    },
+    {
+        name: 'Laravel',
+        class: 'fab fa-laravel'
+    },
+    {
+        name: 'Laravel',
+        class: 'fab fa-laravel'
+    }
+];
+
+
 }

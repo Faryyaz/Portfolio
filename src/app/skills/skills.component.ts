@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component ({
     selector: 'app-skills',
@@ -6,19 +6,5 @@ import { Component } from '@angular/core';
     styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
-    skills = [
-        {
-            name: 'Laravel',
-            class: 'fab fa-laravel'
-        },
-        {
-            name: 'Laravel',
-            class: 'fab fa-laravel'
-        },
-        {
-            name: 'Laravel',
-            class: 'fab fa-laravel'
-        }
-    ];
-    // skills = ['test', 'test 1'];
+    @Input() skills: [{ name: string, class: string }];
 }

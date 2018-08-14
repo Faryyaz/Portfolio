@@ -4,15 +4,7 @@
             <h2 class="card-title">
                 Development Skills
             </h2>
-            <div class="row">
-                <div class="col-md-3" *ngFor="let skill of skills">
-                    <i class="fab fa-laravel fa-3x"></i>
-                    <br>
-                    <b>
-                        Laravel
-                    </b>
-                </div>
-            </div>
+            <app-skill [skills]="skills" ></app-skill>
         </div>
     </div>
 </div>
