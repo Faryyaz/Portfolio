@@ -9,6 +9,9 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { SkillsComponent } from './skills/skills.component';
 import { SkillComponent } from './skills/skill/skill.component';
 import { OtherComponent } from './skills/other/other.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { PersonalComponent } from './projects/personal/personal.component';
+import { ProfessionalComponent } from './projects/professional/professional.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { OtherComponent } from './skills/other/other.component';
     WorkExperienceComponent,
     SkillsComponent,
     SkillComponent,
-    OtherComponent
+    OtherComponent,
+    ProjectsComponent,
+    PersonalComponent,
+    ProfessionalComponent
   ],
   imports: [
     BrowserModule

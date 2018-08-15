@@ -1,11 +1,11 @@
-<div class="row bg-darker">
+<div class="row">
   <div class="col-md-12">
     <div class="container">
-      <h2 class="text-center text-white my-4">Other Skills</h2>
+      <h2 class="text-center my-4">Other Skills</h2>
       <div class="row">
         <div class="col-md-4" *ngFor="let others of otherSkills">
           <ul class="list-group">
-            <li class="list-group-item" *ngFor="let skill of others"><i class="fas fa-star text-warning"></i> {{ skill }}</li>
+            <li class="list-group-item list-group-item-light" *ngFor="let skill of others"><i class="fas fa-star text-warning"></i> {{ skill }}</li>
           </ul>
         </div>
       </div>
