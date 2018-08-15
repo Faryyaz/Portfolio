@@ -68,12 +68,12 @@ others = [
     [
         'Time Management',
         '2D/3D Modelling & animation',
-        'French & English fluently'
+        'French & English communication skills'
     ],
     [
         'Server Management',
-        'Computer reparation',
-        ''
+        'Fast learner',
+        'Team player'
     ]
 ];
 
