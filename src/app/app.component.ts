@@ -52,7 +52,29 @@ export class AppComponent {
         name: 'CSS3',
         classes: 'fab fa-css3-alt'
     },
+    {
+        name: 'MySQL',
+        classes: 'fas fa-database'
+    },
     
+];
+
+others = [
+    [
+        'C# programming (.Net)',
+        'Basic Python programming',
+        'Basic Java programming'
+    ],
+    [
+        'Time Management',
+        '2D/3D Modelling & animation',
+        'French & English fluently'
+    ],
+    [
+        'Server Management',
+        'Computer reparation',
+        ''
+    ]
 ];
 
 

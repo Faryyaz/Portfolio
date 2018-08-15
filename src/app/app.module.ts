@@ -8,6 +8,7 @@ import { ObjectivesComponent } from './objectives/objectives.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillComponent } from './skills/skill/skill.component';
+import { OtherComponent } from './skills/other/other.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SkillComponent } from './skills/skill/skill.component';
     ObjectivesComponent,
     WorkExperienceComponent,
     SkillsComponent,
-    SkillComponent
+    SkillComponent,
+    OtherComponent
   ],
   imports: [
     BrowserModule
