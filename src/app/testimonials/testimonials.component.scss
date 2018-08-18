@@ -1,0 +1,18 @@
+.quote {
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+
+    &-author {
+        font-size: 18px;
+        & b,& i {
+            display:block;
+        }
+    }
+}
+
+.card {
+    &-img {
+        width: 150px;
+    }
+}
