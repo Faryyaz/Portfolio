@@ -1,9 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
 $color-darker: #222;
+$color-grey: #eee;
 
 .bg-darker {
     background-color: $color-darker;
+}
+
+.bg-grey {
+    background-color: $color-grey;
 }
 
 .box {

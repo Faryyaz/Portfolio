@@ -1,0 +1,23 @@
+$color-white: #fff;
+$color-grey: #eee;
+$color-blue-info: #17a2b8;
+
+.nav {
+    &-pills-container {
+        background-color: $color-white;
+        border-bottom: 1px solid $color-blue-info;
+        border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    }
+
+    &-content-container {
+        background-color: $color-white;
+        border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+    }
+
+    &-link {
+        &.active {
+            background-color: $color-blue-info;
+        }
+    }
+}
+

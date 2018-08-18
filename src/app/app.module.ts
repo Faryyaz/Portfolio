@@ -12,6 +12,7 @@ import { OtherComponent } from './skills/other/other.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PersonalComponent } from './projects/personal/personal.component';
 import { ProfessionalComponent } from './projects/professional/professional.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProfessionalComponent } from './projects/professional/professional.comp
     OtherComponent,
     ProjectsComponent,
     PersonalComponent,
-    ProfessionalComponent
+    ProfessionalComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule
