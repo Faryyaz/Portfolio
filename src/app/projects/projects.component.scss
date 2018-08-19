@@ -1,23 +1,82 @@
 $color-white: #fff;
 $color-grey: #eee;
 $color-blue-info: #17a2b8;
+$nav: 'nav-rounded';
 
-.nav {
-    &-pills-container {
-        background-color: $color-white;
-        border-bottom: 1px solid $color-blue-info;
-        border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+.#{$nav} {
+
+    &-container {
+        text-align: center;
     }
 
-    &-content-container {
-        background-color: $color-white;
-        border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+    &-content {
+        border-top: 2px dashed #e1e1e1;
     }
 
     &-link {
-        &.active {
-            background-color: $color-blue-info;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        line-height: 92px;
+        background-color: rgb(121, 121, 121);
+        display: inline-block;
+        border-radius: 100%;
+        color: white;
+        
+        &-bordered {
+            border: 2px solid #e1e1e1;
+            padding: 20px;
+            border-radius: 100%;
+        }
+
+        &-wrapper {
+            margin: 0 30px;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            &:after {
+                content: "";
+                width: 30%;
+                position: absolute;
+                border-bottom: 2px dashed #dadada;
+                top: 43%;
+                left: 100%;
+                transform: translateX(34%);
+            }
+
+            &:last-of-type {
+                &:after {
+                    border-bottom: none;
+                }
+            }
+
+        }
+
+    }
+
+
+    & .active {
+        & .#{$nav} {
+            &-link{
+                background-color: $color-blue-info;
+                &-bordered {
+                    border: 2px solid $color-blue-info;
+                }
+            }
         }
     }
+
+    &-link-wrapper:hover {
+        & .#{$nav} {
+            &-link{
+                background-color: $color-blue-info;
+                &-bordered {
+                    border: 2px solid $color-blue-info;
+                }
+            }
+        }
+    }
+
 }
+
 

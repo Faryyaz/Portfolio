@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-work-experience',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
     styleUrls: ['./work-experience.component.scss']
 })
 export class WorkExperienceComponent {
-
+    @Input('workExp') workExperience: [{company: string, position: string, duration: string, description: string}];
 }

@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 $color-darker: #222;
-$color-grey: #eee;
+$color-grey: #f8f8f8;
+$border-grey: #e1e1e1;
 
 .bg-darker {
     background-color: $color-darker;
@@ -20,7 +21,7 @@ $color-grey: #eee;
     }
 }
 
-.btn {
+.btn-skew {
     border-radius: 0;
     transform: skew(-5deg);
 
@@ -28,4 +29,17 @@ $color-grey: #eee;
         display: block;
         transform: skew(5deg);
     }
+}
+
+.btn-rounded {
+    border-radius: 100%;
+}
+
+.btn-fixed-size {
+    height: 40px;
+    width: 40px;
+}
+
+.border-grey {
+    border-color: $border-grey;
 }

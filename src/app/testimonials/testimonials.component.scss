@@ -1,8 +1,6 @@
-.quote {
-    font-size: 20px;
-    text-align: justify;
-    text-justify: inter-word;
+$color-shadow: rgba(0,0,0,.25);
 
+.quote {
     &-author {
         font-size: 18px;
         & b,& i {
@@ -13,6 +11,27 @@
 
 .card {
     &-img {
-        width: 150px;
+        width: 100px;
+    }
+}
+
+.testimonials {
+    & .row:nth-of-type(odd) {
+        border-left: 1px solid $color-shadow;
+        border-bottom-left-radius: 40%;
+
+        & .card {
+            border-bottom-left-radius: 40%;
+        }
+
+    }
+
+    & .row:nth-of-type(even) {
+        border-right: 1px solid $color-shadow;
+        border-top-right-radius: 40%;
+
+        & .card {
+            border-top-right-radius: 40%;
+        }
     }
 }

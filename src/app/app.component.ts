@@ -77,5 +77,27 @@ others = [
     ]
 ];
 
+workExperience = [
+    {
+        company: 'Emtel Ltd',
+        position: 'PM Administrator/Developer',
+        duration: 'Feb 2013 - Apr 2015',
+        description: 'Development of automated software (e.g. Dashboards, ETL process, etc...)'
+    },
+    {
+        company: 'Stella Telecom Ltd',
+        position: 'Web Engineer ',
+        duration: 'May 2015 - Apr 2018',
+        description: 'Development of web projects using web technologies/frameworks'
+    },
+    {
+        company: 'Orange Business Services',
+        position: 'Senior Software Engineer',
+        duration: 'May 2018 - Present',
+        description: 'Customisation and application development within ServiceNow'
+    }
+
+];
+
 
 }

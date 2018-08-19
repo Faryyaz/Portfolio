@@ -1,58 +1,22 @@
-<div class="card-group bg-darker px-5">
-    <div class="card bg-dark text-white box-skew border-danger card-margin">
-        <div class="card-header">
-            <b>Emtel Ltd</b>
-        </div>
-        <div class="card-body text-center box-unskew">
-            <h5 class="card-title">
-                Performance Management Administrator/Developer
-                <br>
-                <i class="small">Feb 2013 - Apr 2015</i>
-            </h5>
-            <p class="card-text small">Development of automated software (e.g. Dashboards, ETL process, etc...)</p>
-        </div>
-        <div class="card-footer">
-            <a href="#" class="btn btn-light btn-md">
-                <span><i class="fa fa-angle-right"></i></span>
-            </a>
-        </div>
-    </div>
-    <div class="card bg-dark text-white box-skew border-info card-margin">
-        <div class="card-header">
-            <b>Stella Telecom Ltd</b>
-        </div>
-        <div class="card-body text-center box-unskew">
-            <h5 class="card-title">
-                Web Engineer
-                <br>
-                <i class="small">May 2015 - Apr 2018</i>
-            </h5>
-            <p class="card-text small">Development of web projects using web technologies/frameworks</p>
-
-        </div>
-        <div class="card-footer">
-            <a href="#" class="btn btn-light btn-md">
-                <span><i class="fa fa-angle-right"></i></span>
-            </a>
-        </div>
-    </div>
-    <div class="card bg-dark text-white box-skew border-warning card-margin">
-        <div class="card-header">
-            <b>Orange Business Services</b>
-        </div>
-        <div class="card-body text-center box-unskew">
-            <h5 class="card-title">
-                Senior Software Engineer – ServiceNow Developer
-                <br>
-                <i class="small">May 2018 - Present</i>
-            </h5>
-            <p class="card-text small">Customisation and application development within ServiceNow</p>
-
-        </div>
-        <div class="card-footer">
-            <a href="#" class="btn btn-light btn-md">
-                <span><i class="fa fa-angle-right"></i></span>
-            </a>
-        </div>
+<div class="row bg-darker justify-content-md-center">
+    <div class="col-lg-3" *ngFor="let exp of workExperience">
+        <div class="card bg-dark text-white box-skew">
+                <div class="card-header">
+                    <b>{{ exp.company }}</b>
+                </div>
+                <div class="card-body text-center box-unskew">
+                    <p class="lead">
+                            {{ exp.position }}
+                        <br>
+                        <i class="small">{{ exp.duration }}</i>
+                    </p>
+                    <p class="card-text small">{{ exp.description }}</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-light btn-md">
+                        <span><i class="fa fa-angle-right"></i></span>
+                    </a>
+                </div>
+            </div>
     </div>
 </div>
