@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
+import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { ObjectivesComponent } from './objectives/objectives.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
@@ -14,11 +14,12 @@ import { PersonalComponent } from './projects/personal/personal.component';
 import { ProfessionalComponent } from './projects/professional/professional.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
+    HeaderComponent,
     HeroComponent,
     ObjectivesComponent,
     WorkExperienceComponent,
@@ -29,7 +30,8 @@ import { FooterComponent } from './footer/footer.component';
     PersonalComponent,
     ProfessionalComponent,
     TestimonialsComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule
