@@ -16,6 +16,8 @@ import { TestimonialsComponent } from './home/testimonials/testimonials.componen
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { HomeService } from './home/home.service';
+import { TimelineComponent } from './timeline/timeline.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { HomeService } from './home/home.service';
     ProfessionalComponent,
     TestimonialsComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    TimelineComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule
