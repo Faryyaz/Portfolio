@@ -18,6 +18,13 @@ import { HomeComponent } from './home/home.component';
 import { HomeService } from './home/home.service';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ContactComponent } from './contact/contact.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const appRoutes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'timeline', component: TimelineComponent},
+  {path: 'contact', component: ContactComponent}
+];
 
 @NgModule({
   declarations: [
@@ -39,7 +46,8 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [HomeService],
   bootstrap: [AppComponent]
