@@ -90,4 +90,34 @@ export class HomeService {
         }
     
     ];
+
+    projects = {
+        professional: [
+            {
+                title: 'Alchemetrix - Dashboard',
+                description: 'With supporting text below as a natural lead-in to additional content.',
+                graphic: {type: 'icon', data: 'fas fa-tachometer-alt'},
+                link: '',
+                company: 'Emtel Ltd'
+            },
+            {
+                title: 'Alchemetrix - GIS',
+                description: 'With supporting text below as a natural lead-in to additional content.',
+                graphic: {type: 'icon', data: 'fas fa-map'},
+                link: '',
+                company: 'Emtel Ltd'
+            }
+        ],
+        personal: [
+            {
+                title: '',
+                description: '',
+                graphic: {type: 'image', data: './...'},
+                link: '',
+                company: 'Personal | Part time'
+            }
+        ]
+    };
+
+
 }

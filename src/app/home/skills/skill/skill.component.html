@@ -1,13 +1,12 @@
 <div class="row mx-4 mt-4">
   <div class="col-lg-2 col-md-3" *ngFor="let skill of skills">
-  <div class="card bg-info text-white my-3 card-min">
-    <div class="card-body">
-      <i class="{{ skill.classes }} fa-3x"></i>
-    </div>
-    <div class="card-footer">
-      {{ skill.name }}
+    <div class="card bg-info my-3 card-min">
+      <div class="card-body text-white">
+        <i class="{{ skill.classes }} fa-3x"></i>
+      </div>
+      <div class="card-footer bg-white text-secondary">
+        {{ skill.name }}
+      </div>
     </div>
   </div>
-</div>
-
 </div>

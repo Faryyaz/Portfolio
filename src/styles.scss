@@ -3,6 +3,7 @@
 $color-darker: #222;
 $color-grey: #f8f8f8;
 $border-grey: #e1e1e1;
+$color-info: #17a2b8;
 
 .bg-darker {
     background-color: $color-darker;
@@ -42,4 +43,15 @@ $border-grey: #e1e1e1;
 
 .border-grey {
     border-color: $border-grey;
+}
+
+.card {
+    &-icon {
+        height: 120px;
+        width: 100%;
+        background-color: $color-info;
+        line-height: 100px;
+        color: white;
+        padding: 25px 0;
+    }
 }
