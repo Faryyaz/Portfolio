@@ -15,6 +15,7 @@ import { ProfessionalComponent } from './home/projects/professional/professional
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { HomeService } from './home/home.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [HomeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HomeService } from '../../home.service';
 
 @Component({
   selector: 'app-other',
@@ -6,11 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./other.component.scss']
 })
 export class OtherComponent implements OnInit {
-  @Input() otherSkills: string [];
+  otherSkills: string [][];
 
-  constructor() { }
+  constructor(private homeService: HomeService) { }
 
   ngOnInit() {
+    this.otherSkills = this.homeService.others;
   }
 
 }
