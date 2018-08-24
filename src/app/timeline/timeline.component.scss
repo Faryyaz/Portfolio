@@ -44,7 +44,7 @@
 
         &-content {
             width: 35%;
-            padding: 30px 20px;
+            
             margin: 50px 0;
             z-index: 1;
             position: relative;
@@ -124,6 +124,15 @@
             border: 1px dashed $color-grey;
             border-left: 0;
             border-right: 0;
+
+            &:last-of-type, &:first-of-type {
+                border: 0;
+            }
+
+        }
+
+        & .description {
+            padding: 0 20px 20px 20px;
         }
 
     }
@@ -148,8 +157,11 @@
     }
 
     & .title {
-        color: #fff;
-        margin: 0 0 10px 0;
+        color: $color-white;
+        padding: 20px 0;
+        margin-bottom: 0; 
+        background-color: rgba(0, 0, 0, 0.15);
+        text-transform: uppercase;
     }
 
 }
