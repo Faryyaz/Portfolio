@@ -1,4 +1,5 @@
-$bg-darker: #111;
+@import 'variables';
+
 .bg-darker {
-    background-color: $bg-darker
+    background-color: $color-darker;
 }
