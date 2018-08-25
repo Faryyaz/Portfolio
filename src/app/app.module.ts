@@ -21,8 +21,6 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
