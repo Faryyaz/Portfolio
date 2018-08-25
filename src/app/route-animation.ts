@@ -4,8 +4,7 @@ import {
     animate,
     transition,
     style,
-    query,
-    group
+    query
 } from '@angular/animations';
 
 export const routeAnimation = trigger('routeAnimation', [
