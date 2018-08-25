@@ -6,7 +6,14 @@
 
     & .timeline {
         position: relative;
-        margin-top: -79px;
+
+        &-separator {
+            position: absolute;
+            height: 100%;
+            left: 50%;
+            top: 0;
+            border-left: 4px dotted $color-secondary;
+        }
 
         &:first-child {
           margin-top: 0;
@@ -32,7 +39,7 @@
         &-icon {
             width: 150px;
             height: 150px;
-            border-radius: 30%;
+            border-radius: 50%;
             margin: auto;
             position: absolute;
             top: 0;
@@ -43,15 +50,13 @@
         }
 
         &-content {
-            width: 35%;
-            
+            width: 40%;
             margin: 50px 0;
-            z-index: 1;
             position: relative;
 
             &:before {
                 content: "";
-                width: 20%;
+                width: 40%;
                 height: 4px;
                 position: absolute;
                 top: 50%;
@@ -83,7 +88,7 @@
                 background: $color-info;
 
                 &:before {
-                    right: -17%;
+                    right: -32%;
                     background: $color-info;
                 }
             }
@@ -112,10 +117,11 @@
                 background: $color-dark;
 
                 &:before {
-                    left: -17%;
+                    left: -32%;
                     background: $color-dark;
                 }
             }
+
         }
 
         & .list-group-item {
@@ -166,52 +172,65 @@
 
 }
 
+@media only screen and (max-width: 991px) {
+    .main-timeline {
 
-// @media only screen and (max-width: 1199px){
-//     .main-timeline .timeline{ margin-top: -103px; }
-//     .main-timeline .timeline-content:before{ left: -18%; }
-//     .main-timeline .timeline:nth-child(2n) .timeline-content:before{ right: -18%; }
-// }
-// @media only screen and (max-width: 990px){
-//     .main-timeline .timeline{ margin-top: -127px; }
-//     .main-timeline .timeline-content:before{ left: -2%; }
-//     .main-timeline .timeline:nth-child(2n) .timeline-content:before{ right: -2%; }
-// }
-// @media only screen and (max-width: 767px){
-//     .main-timeline .timeline{
-//         margin-top: 0;
-//         overflow: hidden;
-//     }
-//     .main-timeline .timeline:before,
-//     .main-timeline .timeline:nth-child(2n):before{
-//         box-shadow: none;
-//     }
-//     .main-timeline .timeline-icon,
-//     .main-timeline .timeline:nth-child(2n) .timeline-icon{
-//         margin-top: -30px;
-//         margin-bottom: 20px;
-//         position: relative;
-//         transform: rotate(135deg);
-//     }
-//     .main-timeline .year,
-//     .main-timeline .timeline:nth-child(2n) .year{ transform: rotate(-135deg); }
-//     .main-timeline .timeline-content,
-//     .main-timeline .timeline:nth-child(2n) .timeline-content{
-//         width: 100%;
-//         float: none;
-//         border-radius: 0 0 20px 20px;
-//         text-align: center;
-//         padding: 25px 20px;
-//         margin: 0 auto;
-//     }
-//     .main-timeline .timeline-content:before,
-//     .main-timeline .timeline:nth-child(2n) .timeline-content:before{
-//         width: 15px;
-//         height: 25px;
-//         position: absolute;
-//         top: -22px;
-//         left: 50%;
-//         z-index: -1;
-//         transform: translate(-50%,0);
-//     }
-// }
+        & .timeline {
+            margin-top: 0;
+            overflow: hidden;
+
+            &-separator {
+                z-index: -1;
+            }
+
+            &:nth-of-type(odd), &:nth-of-type(even) {
+                &:before {
+                    box-shadow: none;
+                }
+
+                margin-bottom: 20px;
+                position: relative;
+
+                & .year {
+                    transform: rotate(-135deg);
+                }
+
+                & .timeline-content {
+                    width: 100%;
+                    float: none;
+                    text-align: center;
+                    padding: 25px 20px;
+                    margin: 0 auto;
+
+                    &:before {
+                        width: 0;
+                        height: 25px;
+                        position: absolute;
+                        top: -22px;
+                        left: 50%;
+                        z-index: -1;
+                        transform: translate(-50%,0);
+                    }
+                }
+
+                & .timeline-icon {
+                    position: relative;
+                }
+
+            }
+
+            &:nth-of-type(odd) {
+                & .timeline-icon {
+                    transform: rotate(135deg);
+                }
+            }
+
+            &:nth-of-type(even) {
+                & .timeline-icon {
+                    transform: rotate(-225deg);
+                }
+            }
+        }
+
+    }
+}

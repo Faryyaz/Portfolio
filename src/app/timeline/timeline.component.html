@@ -4,10 +4,13 @@
             <div class="main-timeline">
                 <div class="timeline" *ngFor="let work of workTimeLine">
                     <div class="timeline-icon">
-                        <span class="year">{{ work.endingYear }}</span>
+                        <span class="year">{{ work.endingYear }} </span>
                     </div>
                     <div class="timeline-content">
-                        <h3 class="title text-center lead">{{ work.positionTitle }}</h3>
+                        <h3 class="title text-center lead">{{ work.positionTitle }}
+                            <br>
+                            <i class="small">({{ work.company }} | {{ work.period.from }} - {{ work.period.to }})</i>
+                        </h3>
                         <div class="description">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item" *ngFor="let workDescription of work.description">{{ workDescription }}</li>
@@ -15,6 +18,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="timeline-separator"></div>
             </div>
         </div>
     </div>
