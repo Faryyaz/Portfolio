@@ -1,5 +1,5 @@
 <app-header></app-header>
-<div class="container-fluid">
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
+<div class="container-fluid route-container" [@routeAnimation]="getDepth(appOutlet)">
+    <router-outlet #appOutlet="outlet"></router-outlet>
 </div>
+<app-footer></app-footer>

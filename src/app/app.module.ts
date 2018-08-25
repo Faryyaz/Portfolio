@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule }  from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -18,13 +19,9 @@ import { HomeComponent } from './home/home.component';
 import { HomeService } from './home/home.service';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ContactComponent } from './contact/contact.component';
-import { Routes, RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
-const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'timeline', component: TimelineComponent},
-  {path: 'contact', component: ContactComponent}
-];
+
 
 @NgModule({
   declarations: [
@@ -47,7 +44,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [HomeService],
   bootstrap: [AppComponent]

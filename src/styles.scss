@@ -52,3 +52,10 @@
         padding: 25px 0;
     }
 }
+
+.route-container {
+    position: relative;
+}
+.route-container>* {
+    display: block;
+}
