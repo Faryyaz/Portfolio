@@ -19,12 +19,7 @@ import { HomeService } from './home/home.service';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ContactComponent } from './contact/contact.component';
 import { Routes, RouterModule } from '@angular/router';
-
-const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'timeline', component: TimelineComponent},
-  {path: 'contact', component: ContactComponent}
-];
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -47,7 +42,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   providers: [HomeService],
   bootstrap: [AppComponent]
