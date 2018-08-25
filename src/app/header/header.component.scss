@@ -6,6 +6,8 @@
 
 .nav-link {
     padding: 1.2rem 1rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
 
     &.active {
         background-color: $color-info;
