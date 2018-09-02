@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/work-experience', 'WorkExperienceController');
+Route::get('/work-experience', 'Controller@workExperience');
