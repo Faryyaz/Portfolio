@@ -7,7 +7,7 @@ import { HomeService } from '../home.service';
     styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit{
-    skills: { name: string, classes: string }[];
+    skills: { title: string, classes: string }[];
 
     constructor(private homeService: HomeService) {}
 

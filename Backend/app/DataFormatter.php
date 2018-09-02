@@ -6,7 +6,7 @@ class DataFormatter {
 
     public static function getWorkExperience()
     {
-        $workExperiences = Work_experience::all();
+        $workExperiences = \App\Work_experience::all();
 
         $result = [];
         foreach($workExperiences as $workExperience) {
@@ -27,7 +27,7 @@ class DataFormatter {
 
     public static function getWorkTimeline()
     {
-        $workExperiences = Work_experience::all();
+        $workExperiences = \App\Work_experience::all();
 
         $result = [];
         foreach($workExperiences as $workExperience) {
@@ -52,7 +52,7 @@ class DataFormatter {
 
     public static function getProjects()
     {
-        $projects = Projects::all();
+        $projects = \App\Projects::all();
 
         $result = [
             'professional' => [],
@@ -78,12 +78,45 @@ class DataFormatter {
 
     public static function getMainSkills()
     {
+        $skills  = \App\Skills::where('type', 'main')
+        ->get();
 
+        $result = [];
+        foreach($skills as $skill) {
+
+            array_push($result,
+                array(
+                    'title' => $skill->title,
+                    'classes' => $skill->classes
+                )
+            );
+
+        }
+
+        return $result;
     }
 
     public static function getOtherSkills()
     {
+        $skills  = \App\Skills::where('type', 'other')
+        ->get();
 
+        $result = [];
+        $batch = [];
+        foreach($skills as $skill) {
+
+            array_push($batch,
+                $skill->title
+            );
+
+            if(count($batch) === 3) {
+                array_push($result, $batch);
+                $batch = [];
+            }
+
+        }
+
+        return $result;
     }
 
     public static function getTestimonials()

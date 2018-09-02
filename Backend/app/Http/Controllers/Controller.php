@@ -36,7 +36,7 @@ class Controller extends BaseController
 
     public function mainSkills()
     {
-        $skills = Skills::all();
+        $skills = \App\DataFormatter::getMainSkills();;
 
         return response()->json([
             'skills' => $skills,
@@ -45,7 +45,11 @@ class Controller extends BaseController
 
     public function otherSkills()
     {
+        $others = \App\DataFormatter::getOtherSkills();;
 
+        return response()->json([
+            'others' => $others,
+        ], 200);
     }
 
     public function testimonials()
