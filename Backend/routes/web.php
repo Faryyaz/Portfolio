@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/work-experience', 'Controller@workExperience');
+Route::get('/projects', 'Controller@projects');

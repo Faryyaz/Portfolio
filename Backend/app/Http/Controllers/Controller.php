@@ -13,10 +13,8 @@ class Controller extends BaseController
 
     public function workExperience()
     {
-        // $workExperience = Work_experience::all();
-
         $workExperience = \App\DataFormatter::getWorkExperience();
-        // dd($workExperience);
+
         return response()->json([
             'workExperience' => $workExperience,
         ], 200);
@@ -29,7 +27,7 @@ class Controller extends BaseController
 
     public function projects()
     {
-        $projects = Projects::all();
+        $projects = \App\DataFormatter::getProjects();
 
         return response()->json([
             'projects' => $projects,
