@@ -7,7 +7,7 @@ import { HomeService } from '../../home.service';
   styleUrls: ['./professional.component.scss']
 })
 export class ProfessionalComponent implements OnInit {
-  professionalProjects: {title: string, description: string, graphic: {type: string, data: string}, link: string}[];
+  professionalProjects: {title: string, description: string, graphic: {type: string, data: string}, link: string, company: string}[];
 
   constructor(private homeService: HomeService) { }
 

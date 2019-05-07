@@ -1,9 +1,8 @@
-$color-white: #fff;
-$color-grey: #eee;
-$color-blue-info: #17a2b8;
-$nav: 'nav-rounded';
+@import 'variables';
+$nav-r: 'nav-rounded';
+$nav-c: 'nav-content';
 
-.#{$nav} {
+.#{$nav-r} {
 
     &-container {
         text-align: center;
@@ -56,25 +55,40 @@ $nav: 'nav-rounded';
 
 
     & .active {
-        & .#{$nav} {
+        & .#{$nav-r} {
             &-link{
-                background-color: $color-blue-info;
+                background-color: $color-info;
                 &-bordered {
-                    border: 2px solid $color-blue-info;
+                    border: 2px solid $color-info;
                 }
             }
         }
     }
 
     &-link-wrapper:hover {
-        & .#{$nav} {
+        & .#{$nav-r} {
             &-link{
-                background-color: $color-blue-info;
+                background-color: $color-dark;
                 &-bordered {
-                    border: 2px solid $color-blue-info;
+                    border: 2px solid $color-dark;
                 }
             }
         }
+    }
+
+}
+
+
+.#{$nav-c} {
+    max-height: 0;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+
+    &.active {
+        max-height: 500px;
+        padding: 1.5rem;
+        transition: max-height 0.25s ease-in;
     }
 
 }

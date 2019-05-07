@@ -1,3 +1,19 @@
-<p>
-  personal works!
-</p>
+<div class="row">
+  <div class=" col-lg-3 col-md-4 col-sm-6" *ngFor="let perProject of personalProjects">
+    <div class="card text-center">
+        <img class="card-img-top" src="..." alt="Card image cap" *ngIf="perProject.graphic.type === 'image'; else cardIcon">
+        <ng-template #cardIcon>
+            <div class="card-icon">
+              <i class="{{ perProject.graphic.data }} fa-4x"></i>
+            </div>
+        </ng-template>
+      <div class="card-body">
+        <h6 class="card-title lead">{{ perProject.title }}</h6>
+        <p class="card-text small">
+          {{ perProject.description }}<br>
+          <small><b>( {{ perProject.company }} )</b></small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

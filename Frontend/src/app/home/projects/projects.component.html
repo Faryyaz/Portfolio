@@ -6,29 +6,33 @@
         <div class="col-md-12">
           <div class="nav-rounded-container py-3">
             <nav class="nav-rounded">
-              <div class="nav-rounded-link-wrapper active">
+              <div class="nav-rounded-link-wrapper active" data-link="professional">
                 <div class="nav-rounded-link-bordered">
                   <div class="nav-rounded-link">
                     <i class="fas fa-trophy fa-2x"></i>
                   </div>
                 </div>
-                <div class="nav-rounded-link-text text-muted">Professional</div>
+                <div class="nav-rounded-link-text text-muted">
+                  Professional
+                </div>
               </div>
-              <div class="nav-rounded-link-wrapper">
+              <div class="nav-rounded-link-wrapper" data-link="personal">
                 <div class="nav-rounded-link-bordered">
                   <div class="nav-rounded-link">
                     <i class="fas fa-rocket fa-2x"></i>
                   </div>
                 </div>
-                <div class="nav-rounded-link-text text-muted">Personal</div>
+                <div class="nav-rounded-link-text text-muted">
+                    Personal
+                </div>
               </div>
             </nav>
           </div>
           <div class="nav-rounded-content py-2 px-2 mb-4">
-            <div class="nav-content px-4 py-4">
+            <div id="professional" class="nav-content active">
               <app-professional></app-professional>
             </div>
-            <div class="nav-rounded-content px-4 py-4">
+            <div id="personal" class="nav-content">
               <app-personal></app-personal>
             </div>
           </div>

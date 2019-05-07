@@ -17,7 +17,7 @@ export class TimelineComponent implements OnInit {
         'Monitor servers at both software and hardware level. Report and troubleshoot of faulty servers',
         'Liaise with suppliers for the reparation process'
       ],
-      endingYear: '2015',
+      startingYear: '2013',
       company: 'Emtel Ltd',
       period: {
         from: 'Feb 2013',
@@ -32,7 +32,7 @@ export class TimelineComponent implements OnInit {
         'Maintain, update and develop plug-ins for Wordpress',
         'Lead and guide new recruits/juniors. Codes developed are regularly checked for quality using SonarQube and Gitlab'
       ],
-      endingYear: '2018',
+      startingYear: '2015',
       company: 'Stella Telecom Ltd',
       period: {
         from: 'May 2015',
@@ -46,7 +46,7 @@ export class TimelineComponent implements OnInit {
         'Ipsum',
         'Whatever'
       ],
-      endingYear: '2018',
+      startingYear: '2018',
       company: 'Orange Business Services',
       period: {
         from: 'May 2018',
