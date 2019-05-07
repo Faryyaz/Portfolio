@@ -1,51 +1,51 @@
 export class HomeService {
     skills = [
         {
-            name: 'Laravel',
+            title: 'Laravel',
             classes: 'fab fa-laravel'
         },
         {
-            name: 'Angular',
+            title: 'Angular',
             classes: 'fab fa-angular'
         },
         {
-            name: 'Vuejs',
+            title: 'Vuejs',
             classes: 'fab fa-vuejs'
         },
         {
-            name: 'Javascript',
+            title: 'Javascript',
             classes: 'fab fa-js'
         },
         {
-            name: 'HTML 5',
+            title: 'HTML 5',
             classes: 'fab fa-html5'
         },
         {
-            name: 'Sass',
+            title: 'Sass',
             classes: 'fab fa-sass'
         },
         {
-            name: 'Gulp',
+            title: 'Gulp',
             classes: 'fab fa-gulp'
         },
         {
-            name: 'GIT',
+            title: 'GIT',
             classes: 'fab fa-git'
         },
         {
-            name: 'PHP',
+            title: 'PHP',
             classes: 'fab fa-php'
         },
         {
-            name: 'Wordpress',
+            title: 'Wordpress',
             classes: 'fab fa-wordpress'
         },
         {
-            name: 'CSS3',
+            title: 'CSS3',
             classes: 'fab fa-css3-alt'
         },
         {
-            name: 'MySQL',
+            title: 'MySQL',
             classes: 'fas fa-database'
         },
         
