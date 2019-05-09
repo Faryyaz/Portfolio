@@ -6,14 +6,14 @@ class DataFormatter {
 
     public static function getWorkExperience()
     {
-        $workExperiences = \App\Work_experience::all();
+        $workExperiences = \App\WorkExperience::all();
 
         $result = [];
         foreach($workExperiences as $workExperience) {
 
             array_push($result,
                 array(
-                    'postion' => $workExperience->position,
+                    'position' => $workExperience->position,
                     'company' => $workExperience->company,
                     'duration' => $workExperience->period_from . ' - ' . $workExperience->period_to,
                     'short_description' => $workExperience->short_description
@@ -27,7 +27,7 @@ class DataFormatter {
 
     public static function getWorkTimeline()
     {
-        $workExperiences = \App\Work_experience::all();
+        $workExperiences = \App\WorkExperience::all();
 
         $result = [];
         foreach($workExperiences as $workExperience) {
@@ -41,7 +41,7 @@ class DataFormatter {
                         'to' => $workExperience->period_to
                     ],
                     'description' => $workExperience->description,
-                    'endingYear' => $workExperience->period_to
+                    'startingYear' => $workExperience->period_from
                 )
             );
 
@@ -52,7 +52,7 @@ class DataFormatter {
 
     public static function getProjects()
     {
-        $projects = \App\Projects::all();
+        $projects = \App\Project::all();
 
         $result = [
             'professional' => [],
@@ -78,7 +78,7 @@ class DataFormatter {
 
     public static function getMainSkills()
     {
-        $skills  = \App\Skills::where('type', 'main')
+        $skills  = \App\Skill::where('type', 'main')
         ->get();
 
         $result = [];
@@ -98,7 +98,7 @@ class DataFormatter {
 
     public static function getOtherSkills()
     {
-        $skills  = \App\Skills::where('type', 'other')
+        $skills  = \App\Skill::where('type', 'other')
         ->get();
 
         $result = [];
