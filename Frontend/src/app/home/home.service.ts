@@ -1,3 +1,7 @@
+import { Injectable } from '@angular/core';
+import { ServerService } from "../server.service";
+
+@Injectable()
 export class HomeService {
     mainSkills = [
         {
@@ -118,6 +122,14 @@ export class HomeService {
             }
         ]
     };
+
+    constructor(private serverService: ServerService) {
+        this.serverService.getWorkExperience()
+            .subscribe(
+                (response) => console.log(response),
+                (error) => console.log(error)
+            );
+    }
 
 
 }

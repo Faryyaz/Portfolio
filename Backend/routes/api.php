@@ -16,3 +16,11 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::get('/work-experience', 'Controller@workExperience');
+Route::get('/projects', 'Controller@projects');
+Route::get('/work-timeline', 'Controller@workTimeLine');
+Route::get('/main-skills', 'Controller@mainSkills');
+Route::get('/other-skills', 'Controller@otherSkills');
+Route::get('/testimonials', 'Controller@testimonials');

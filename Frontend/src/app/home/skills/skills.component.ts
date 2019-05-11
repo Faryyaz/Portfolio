@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from '../home.service';
+import { ServerService } from '../../server.service';
 
 @Component ({
     selector: 'app-skills',
@@ -9,9 +10,9 @@ import { HomeService } from '../home.service';
 export class SkillsComponent implements OnInit{
     mainSkills: { title: string, classes: string }[];
 
-    constructor(private homeService: HomeService) {}
+    constructor(private homeService: HomeService, private serverService: ServerService) {}
 
     ngOnInit() {
-        this.mainSkills = this.homeService.mainSkills;
+        // this.mainSkills = this.homeService.mainSkills;
     }
 }
