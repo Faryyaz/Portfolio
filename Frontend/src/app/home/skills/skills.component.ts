@@ -7,11 +7,11 @@ import { HomeService } from '../home.service';
     styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit{
-    skills: { title: string, classes: string }[];
+    mainSkills: { title: string, classes: string }[];
 
     constructor(private homeService: HomeService) {}
 
     ngOnInit() {
-        this.skills = this.homeService.skills;
+        this.mainSkills = this.homeService.mainSkills;
     }
 }

@@ -12,7 +12,7 @@ export class OtherComponent implements OnInit {
   constructor(private homeService: HomeService) { }
 
   ngOnInit() {
-    this.otherSkills = this.homeService.others;
+    this.otherSkills = this.homeService.otherSkills;
   }
 
 }

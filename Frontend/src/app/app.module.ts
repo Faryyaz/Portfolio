@@ -8,7 +8,7 @@ import { HeroComponent } from './home/hero/hero.component';
 import { ObjectivesComponent } from './home/objectives/objectives.component';
 import { WorkExperienceComponent } from './home/work-experience/work-experience.component';
 import { SkillsComponent } from './home/skills/skills.component';
-import { SkillComponent } from './home/skills/skill/skill.component';
+import { MainComponent } from './home/skills/main/main.component';
 import { OtherComponent } from './home/skills/other/other.component';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { PersonalComponent } from './home/projects/personal/personal.component';
@@ -29,7 +29,7 @@ import { AppRoutingModule } from './app-routing.module';
     ObjectivesComponent,
     WorkExperienceComponent,
     SkillsComponent,
-    SkillComponent,
+    MainComponent,
     OtherComponent,
     ProjectsComponent,
     PersonalComponent,

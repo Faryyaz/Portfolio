@@ -1,5 +1,5 @@
 export class HomeService {
-    skills = [
+    mainSkills = [
         {
             title: 'Laravel',
             classes: 'fab fa-laravel'
@@ -51,7 +51,7 @@ export class HomeService {
         
     ];
     
-    others = [
+    otherSkills = [
         [
             'C# programming (.Net)',
             'Basic Python programming',
