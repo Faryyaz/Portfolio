@@ -22,7 +22,11 @@ class Controller extends BaseController
 
     public function workTimeLine()
     {
+        $workTimeLine = \App\DataFormatter::getWorkTimeline();
 
+        return response()->json([
+            'workTimeLine' => $workTimeLine,
+        ], 200);
     }
 
     public function projects()
@@ -36,7 +40,7 @@ class Controller extends BaseController
 
     public function mainSkills()
     {
-        $skills = \App\DataFormatter::getMainSkills();;
+        $skills = \App\DataFormatter::getMainSkills();
 
         return response()->json([
             'skills' => $skills,
@@ -45,7 +49,7 @@ class Controller extends BaseController
 
     public function otherSkills()
     {
-        $others = \App\DataFormatter::getOtherSkills();;
+        $others = \App\DataFormatter::getOtherSkills();
 
         return response()->json([
             'others' => $others,
@@ -54,7 +58,7 @@ class Controller extends BaseController
 
     public function testimonials()
     {
-        $testimonials = Testimonials::all();
+        $testimonials = \App\DataFormatter::getTestimonials();
 
         return response()->json([
             'testimonials' => $testimonials,

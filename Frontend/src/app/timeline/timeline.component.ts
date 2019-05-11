@@ -25,7 +25,7 @@ export class TimelineComponent implements OnInit {
       }
     },
     {
-      positionTitle: 'Web Engineer (Research & Development)',
+      positionTitle: 'Web Developer (Research & Development)',
       description: [
         'Development of web projects using web technologies (Jquery/Javascript/Object-oriented PHP) and framework such as Enlight, Antitired (i.e Internally developed frameworks), Zend, Laravel, Bootstrap and VueJs',
         'Development of test modules to ensure smoothness and bug free codes using phpunit testing framework before going into production phase',

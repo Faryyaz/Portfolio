@@ -40,7 +40,7 @@ class DataFormatter {
                         'from' => $workExperience->period_from,
                         'to' => $workExperience->period_to
                     ],
-                    'description' => $workExperience->description,
+                    'description' => explode(';', $workExperience->description),
                     'startingYear' => $workExperience->period_from
                 )
             );
@@ -68,7 +68,8 @@ class DataFormatter {
                         'data'=> $project->graphic_data
                     ],
                     'link' => $project->link,
-                    'company' => $project->company
+                    'company' => $project->company,
+                    'type' => $project->type
                 )
             );
         }
@@ -121,7 +122,7 @@ class DataFormatter {
 
     public static function getTestimonials()
     {
-
+        return \App\Testimonial::all();
     }
 
 }

@@ -15,12 +15,29 @@ class CreateTestimonialsTable extends Migration
     {
         Schema::create('testimonials', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at')->nullable();
             $table->string('position');
             $table->string('full_name');
             $table->string('image')->nullable();
             $table->text('description');
         });
+
+        //insert
+        DB::table('testimonials')->insert([
+            [
+                'position' => 'Senior Full Stack Developer',
+                'full_name' => 'Hyder Abbas',
+                'image' => './assets/img/hyder.jpg',
+                'description' => 'Faryyaz was a real pleasure to work with and we look forward to working with him again. He’s the kind of developer you can trust with a project from start to finish'
+            ],
+            [
+                'position' => 'Team Leader DevOps',
+                'full_name' => 'Prashant Ramhit',
+                'image' => './assets/img/prashant.jpg',
+                'description' => 'Faryyaz was a real pleasure to work with and we look forward to working with him again. He’s the kind of developer you can trust with a project from start to finish'
+            ]
+        ]);
     }
 
     /**
