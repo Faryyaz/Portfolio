@@ -1,12 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Headers, Http } from '@angular/http';
+import { Http } from '@angular/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServerService {
-
-  headers = new Headers({ 'Access-Control-Allow-Origin': '*' });
 
   constructor(private http: Http) { }
 
@@ -14,7 +12,7 @@ export class ServerService {
    * Get the work experience data via http request
    */
   getWorkExperience() {
-    return this.http.get('http://localhost:122/api/work-experience', {headers: this.headers});
+    return this.http.get('http://localhost:122/api/work-experience');
   }
 
   /**
