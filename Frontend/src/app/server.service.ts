@@ -47,7 +47,7 @@ export class ServerService {
    * Get the testimonial data via http request
    */
   getTestimonials() {
-    return this.http.get('http://localhost:122/api/testtimonials');
+    return this.http.get('http://localhost:122/api/testimonials');
   }
 
 

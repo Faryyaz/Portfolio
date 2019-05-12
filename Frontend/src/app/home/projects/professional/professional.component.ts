@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from '../../home.service';
+import { ServerService } from '../../../server.service';
+import { Response } from '@angular/http';
 
 @Component({
   selector: 'app-professional',
@@ -9,10 +11,17 @@ import { HomeService } from '../../home.service';
 export class ProfessionalComponent implements OnInit {
   professionalProjects: {title: string, description: string, graphic: {type: string, data: string}, link: string, company: string}[];
 
-  constructor(private homeService: HomeService) { }
+  constructor(private homeService: HomeService, private serverService: ServerService) { }
 
   ngOnInit() {
-    this.professionalProjects = this.homeService.projects.professional;
+    this.serverService.getProject()
+      .subscribe(
+        (response: Response) => {
+          const data = response.json();
+          this.professionalProjects = data.projects.professional;
+        },
+        (error) => console.log(error)
+      );
   }
 
 }
