@@ -29,13 +29,13 @@ class CreateTestimonialsTable extends Migration
                 'position' => 'Senior Full Stack Developer',
                 'full_name' => 'Hyder Abbas',
                 'image' => './assets/img/hyder.jpg',
-                'description' => 'Faryyaz was a real pleasure to work with and we look forward to working with him again. He’s the kind of developer you can trust with a project from start to finish'
+                'description' => 'Faryyaz was a real pleasure to work with and we look forward to work with him again. He’s the kind of developer you can trust with a project from start to finish'
             ],
             [
                 'position' => 'Team Leader DevOps',
                 'full_name' => 'Prashant Ramhit',
                 'image' => './assets/img/prashant.jpg',
-                'description' => 'Faryyaz was a real pleasure to work with and we look forward to working with him again. He’s the kind of developer you can trust with a project from start to finish'
+                'description' => 'Faryyaz was a real pleasure to work with and we look forward to work with him again. He’s the kind of developer you can trust with a project from start to finish'
             ]
         ]);
     }
