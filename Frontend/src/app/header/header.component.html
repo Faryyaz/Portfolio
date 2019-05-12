@@ -14,7 +14,7 @@
       <li class="nav-item dropdown" (click)="openDropDownMenu()" [ngClass]="{'open' : isDropDownActive}" >
         <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"
           [ngClass]="{'active' : isHomeActive}">
-          Home
+          <i class="fas fa-home"></i> Home
         </a>
         <div class="dropdown-menu">
           <a class="dropdown-item" [routerLink]="['/']" [fragment]="'objectives'">Objectives & Work Experience</a>
@@ -24,10 +24,14 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/timeline']" routerLinkActive="active" >Timeline</a>
+        <a class="nav-link" [routerLink]="['/timeline']" routerLinkActive="active" >
+          <i class="fas fa-clock"></i> Timeline
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active">Contact</a>
+        <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
       </li>
     </ul>
   </div>
