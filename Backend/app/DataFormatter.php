@@ -34,7 +34,7 @@ class DataFormatter {
 
             array_push($result,
                 array(
-                    'postion' => $workExperience->position,
+                    'position' => $workExperience->position,
                     'company' => $workExperience->company,
                     'period' => [
                         'from' => $workExperience->period_from,
