@@ -2,20 +2,25 @@
 
 namespace  App;
 
+use Carbon\Carbon;
+
 class DataFormatter {
 
     public static function getWorkExperience()
     {
         $workExperiences = \App\WorkExperience::all();
+        $presentYear = Carbon::now()->format('Y');
 
         $result = [];
         foreach($workExperiences as $workExperience) {
+
+            $periodTo = $workExperience->period_to->format('Y') > $presentYear ? 'Present' : $workExperience->period_to->format('M Y');
 
             array_push($result,
                 array(
                     'position' => $workExperience->position,
                     'company' => $workExperience->company,
-                    'duration' => $workExperience->period_from . ' - ' . $workExperience->period_to,
+                    'duration' => $workExperience->period_from->format('M Y') . ' - ' . $periodTo,
                     'short_description' => $workExperience->short_description
                 )
             );
@@ -28,20 +33,24 @@ class DataFormatter {
     public static function getWorkTimeline()
     {
         $workExperiences = \App\WorkExperience::all();
+        $presentYear = Carbon::now()->format('Y');
 
         $result = [];
         foreach($workExperiences as $workExperience) {
+            
+            $periodTo = $workExperience->period_to->format('Y') > $presentYear ? 'Present' : $workExperience->period_to->format('M Y');
+            
 
             array_push($result,
                 array(
                     'position' => $workExperience->position,
                     'company' => $workExperience->company,
                     'period' => [
-                        'from' => $workExperience->period_from,
-                        'to' => $workExperience->period_to
+                        'from' => $workExperience->period_from->format('M Y'),
+                        'to' => $periodTo
                     ],
                     'description' => explode(';', $workExperience->description),
-                    'startingYear' => $workExperience->period_from
+                    'startingYear' => $workExperience->period_from->format('Y')
                 )
             );
 
