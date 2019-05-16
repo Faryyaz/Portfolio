@@ -103,7 +103,7 @@ class Controller extends BaseController
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function sendQuotation(Request $request)
+    public function sendEmail(Request $request)
     {
 
         $this->validate($request, [
