@@ -69,4 +69,16 @@ export class ServerService {
     return d.getFullYear();
   }
 
+  /**
+   * Send email to api
+   * 
+   * @param formValues Json object
+   */
+  sendEmail(formValues) {
+    return this.http.post(
+      environment.apiURL + '/send-email',
+      formValues
+    );
+  }
+
 }

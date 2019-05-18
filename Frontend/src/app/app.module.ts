@@ -22,6 +22,7 @@ import { ServerService } from './server.service';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { AppRoutingModule } from './app-routing.module';
     HttpModule,
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [HomeService, ServerService],
   bootstrap: [AppComponent]

@@ -12,6 +12,6 @@
         <p>Email: {{ $email }}</p>
         <p>Company : {{ $company }}</p>
         <br>
-        <p>{{ $message }}</p>
+        <p>{{ $textMessage }}</p>
     </body>
 </html>

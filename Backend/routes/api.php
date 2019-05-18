@@ -24,3 +24,4 @@ Route::get('/work-timeline', 'Controller@workTimeLine');
 Route::get('/main-skills', 'Controller@mainSkills');
 Route::get('/other-skills', 'Controller@otherSkills');
 Route::get('/testimonials', 'Controller@testimonials');
+Route::post('/send-email', 'Controller@sendEmail');

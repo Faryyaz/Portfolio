@@ -110,7 +110,7 @@ class Controller extends BaseController
             'name'     => 'required|max:255',
             'email'    => 'required|email',
             'company' => 'required',
-            'message'  => 'required',
+            'textMessage'  => 'required',
         ]);
 
         \Mail::send('email', $request->all(), function ($message) {
