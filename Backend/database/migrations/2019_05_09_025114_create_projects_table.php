@@ -33,7 +33,7 @@ class CreateProjectsTable extends Migration
                 'title' => 'Alchemetrix - Dashboard',
                 'description' => 'Dashboard that provides KPI indications',
                 'graphic_type' => 'icon',
-                'graphic_data' => 'fas fa-tachometer-alt',
+                'graphic_data' => 'fas fa-chart-line',
                 'link' => '',
                 'company' => 'Emtel Ltd',
                 'type' => 'professional'
@@ -53,7 +53,7 @@ class CreateProjectsTable extends Migration
                 'title' => 'Poke Master',
                 'description' => 'Part time development of a mobile phone game',
                 'graphic_type' => 'image',
-                'graphic_data' => './../',
+                'graphic_data' => '/assets/img/poke_master.png',
                 'link' => 'https://play.google.com/store/apps/details?id=com.flatxg.pokemaster',
                 'company' => 'Personal | Part time',
                 'type' => 'personal'
