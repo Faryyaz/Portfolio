@@ -1,26 +1,28 @@
 <div class="row py-5 text-center">
     <div class="col-md-12">
         <h2 class="text-dark">Work Experiences</h2>
-        <div class="row justify-content-md-center py-4">
-            <div class="col-lg-3" *ngFor="let exp of workExperience">
-                <div class="card bg-dark text-white">
-                    <div class="card-header">
-                        <b>{{ exp.company }}</b>
-                    </div>
-                    <div class="card-body text-center">
-                        <p class="lead">
-                            {{ exp.position }}
-                            <br>
-                            <i class="small">{{ exp.duration }}</i>
-                        </p>
-                        <p class="card-text small">{{ exp.short_description }}</p>
-                    </div>
-                    <div class="card-footer">
-                        <a [routerLink]="['/timeline']" class="btn btn-light btn-md">
-                            <span>
-                                <i class="fa fa-angle-right"></i>
-                            </span>
-                        </a>
+        <div class="container">
+            <div class="row justify-content-md-center py-4">
+                <div class="col-lg-3" *ngFor="let exp of workExperience">
+                    <div class="card bg-dark text-white">
+                        <div class="card-header">
+                            <b>{{ exp.company }}</b>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="lead">
+                                {{ exp.position }}
+                                <br>
+                                <i class="small">{{ exp.duration }}</i>
+                            </p>
+                            <p class="card-text small">{{ exp.short_description }}</p>
+                        </div>
+                        <div class="card-footer">
+                            <a [routerLink]="['/timeline']" class="btn btn-light btn-md">
+                                <span>
+                                    <i class="fa fa-angle-right"></i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
