@@ -42,14 +42,33 @@
     border-color: $border-grey;
 }
 
-.card {
-    &-icon {
-        height: 120px;
-        width: 100%;
-        background-color: $color-secondary;
-        line-height: 100px;
-        color: $color-white;
-        padding: 25px 0;
+.project-cards {
+    .card {
+        height: 100%;
+
+        &-icon {
+            height: (170px - 50px);
+            width: 100%;
+            background-color: $color-dark;
+            line-height: 100px;
+            color: $color-white;
+            padding: 25px 0;
+        }
+
+        &-img {
+            height: calc(170px - 50px);
+            width: 100%;
+            background-color: $color-dark;
+            color: $color-white;
+            padding: 25px 0;
+            
+            & img {
+                width: auto;
+                height: 170%;
+                border-radius: 100%;
+                border: 5px solid $color-white;
+            }
+        }
     }
 }
 
