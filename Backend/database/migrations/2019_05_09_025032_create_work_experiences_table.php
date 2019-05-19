@@ -34,11 +34,12 @@ class CreateWorkExperiencesTable extends Migration
                 'company' => 'Emtel Ltd',
                 'short_description' => 'Development of automated software (e.g. Dashboards, ETL process, etc...)',
                 'description' => '
-                    Development of automated software (e.g. Dashboards, ETL process, etc...) using html/php/javascript/Jquery/mysql/oracle for processing of large amount of data related to performance measurement;
+                    Development of automated software (e.g. Dashboards, ETL process, etc...) using html/php/javascript/Jquery/mysql/oracle/SOAP API for processing of large amount of data related to performance measurement;
+                    Development of Geographical Information System (GIS) using google earth/map API;
                     Management of servers (Linux and Windows servers) locally or remotely using secure shell clients or remote software;
                     Ensure smoothness of services provided to internal users;
-                    Monitor servers at both software and hardware level. Report and troubleshoot of faulty servers;
-                    Liaise with suppliers for the reparation process
+                    Configure/Monitor servers at both software and hardware level. Report and troubleshoot of faulty servers;
+                    Liaise with suppliers for the reparation process of servers
                 '
             ],
             [
@@ -48,9 +49,11 @@ class CreateWorkExperiencesTable extends Migration
                 'company' => 'Stella Telecom Ltd',
                 'short_description' => 'Development of web projects using web technologies/frameworks',
                 'description' => '
-                    Development of web projects using web technologies (Jquery/Javascript/Object-oriented PHP) and framework such as Enlight, Antitired (i.e Internally developed frameworks), Zend, Laravel, Bootstrap and VueJs;
+                    Development of backend modules using php framework such as Enlight, Antitired (i.e Internally developed frameworks), Zend, Laravel;
+                    Development of frontend interface/REST API consumption using Boostrap/JS/JQuery and framework such as VueJs;
                     Development of test modules to ensure smoothness and bug free codes using phpunit testing framework before going into production phase;
                     Maintain, update and develop plug-ins for Wordpress;
+                    Other task includes, configuration of development tools such as webpack, gulp, gitlab-ci, etc...;
                     Lead and guide new recruits/juniors. Codes developed are regularly checked for quality using SonarQube and Gitlab
                 '
             ],
@@ -59,21 +62,21 @@ class CreateWorkExperiencesTable extends Migration
                 'period_to' => '2018-09-30',
                 'position' => 'Senior Software Engineer',
                 'company' => 'Orange Business Services',
-                'short_description' => 'Development of automated software (e.g. Dashboards, ETL process, etc...)',
+                'short_description' => 'Design and develop/configure workflows, forms and scripts in ServiceNow',
                 'description' => '
                     Customisation and application development within ServiceNow using Javascript. Design and develop/configure workflows, forms, scripts;
                     Support the development and configuration of a variety of areas including, but not limited to Incident, Problem, Change, Service Catalog, Service Portal, Knowledge, Release, Asset Management, Configuration Management CMDB), and Reporting;
-                    Development of reporting tool using Laravel to facilitate daily reporting routine;
+                    Development of reporting tool using Laravel framework and ServiceNow API to facilitate daily reporting routine;
                 '
             ],
             [
                 'period_from' => '2018-10-08',
-                'period_to' => '2020-04-01',
+                'period_to' => '2030-04-01',
                 'position' => 'Senior Frontend Developer',
                 'company' => 'Extension Interactive Ltd',
                 'short_description' => 'Development of interfaces using HTML/CSS/JS',
                 'description' => '
-                    Development of web interfaces as per design (UX/UI) using HTML, CSS, JS, Twig, SASS and gulp;
+                    Development of web interfaces as per design (UX/UI) using HTML5, CSS3, JS, Twig, SASS and gulp;
                     Development within CMS/framworks such as Symphony, Drupal, Prestashop, Wordpress and Asp.net;
                     Work in close collaboration with backend team and help/support in resolving bugs;
                     Lead and guide new recruits/juniors and give suggestion on how to improve code + workflow;

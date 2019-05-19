@@ -46,7 +46,7 @@ class CreateSkillsTable extends Migration
             ['title' => '2D/3D Modelling & animation', 'classes' => '', 'type' => 'other'],
             ['title' => 'French & English communication skills', 'classes' => '', 'type' => 'other'],
             ['title' => 'Server Management', 'classes' => '', 'type' => 'other'],
-            ['title' => 'Fast learner', 'classes' => '', 'type' => 'other'],
+            ['title' => 'Autonomous/Fast learner', 'classes' => '', 'type' => 'other'],
             ['title' => 'Team player', 'classes' => '', 'type' => 'other']
 
         ]);
