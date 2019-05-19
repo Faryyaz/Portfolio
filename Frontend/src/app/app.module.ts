@@ -17,7 +17,6 @@ import { ProfessionalComponent } from './home/projects/professional/professional
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { HomeService } from './home/home.service';
 import { ServerService } from './server.service';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ContactComponent } from './contact/contact.component';
@@ -50,7 +49,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [HomeService, ServerService],
+  providers: [ServerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

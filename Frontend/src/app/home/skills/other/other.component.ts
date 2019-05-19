@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeService } from '../../home.service';
 import { ServerService } from '../../../server.service';
 import { Response } from '@angular/http';
 
@@ -11,7 +10,7 @@ import { Response } from '@angular/http';
 export class OtherComponent implements OnInit {
   otherSkills: string [][];
 
-  constructor(private homeService: HomeService, private serverService: ServerService) { }
+  constructor(private serverService: ServerService) { }
 
   ngOnInit() {
     this.serverService.getOtherSkills()
