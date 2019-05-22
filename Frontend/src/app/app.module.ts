@@ -22,6 +22,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HomeComponent,
     TimelineComponent,
-    ContactComponent
+    ContactComponent,
+    LoaderComponent
   ],
   imports: [
     HttpModule,
