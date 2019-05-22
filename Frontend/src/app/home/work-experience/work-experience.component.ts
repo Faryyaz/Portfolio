@@ -2,14 +2,13 @@ import {
     Component,
     OnInit,
     ViewChild,
-    ViewContainerRef,
-    ComponentFactoryResolver,
-    ComponentRef,
-    ComponentFactory
+    ViewContainerRef
+    
 } from '@angular/core';
 import { ServerService } from "../../server.service";
 import { Response } from '@angular/http';
-import { LoaderComponent } from '../../loader/loader.component';
+import { LoaderService } from '../../loader/loader.service';
+import { delay } from 'rxjs/operators';
 
 @Component({
     selector: 'app-work-experience',
@@ -19,28 +18,19 @@ import { LoaderComponent } from '../../loader/loader.component';
 export class WorkExperienceComponent implements OnInit {
     workExperience: {company: string, position: string, duration: string, description: string}[];
     componentRef: any;
-
+    
     @ViewChild('appLoaderComponent', { read: ViewContainerRef }) entry: ViewContainerRef;
-    constructor(private serverService: ServerService, private resolver: ComponentFactoryResolver) {}
-
-
-    createComponent() {
-        const factory = this.resolver.resolveComponentFactory(LoaderComponent);
-        this.componentRef = this.entry.createComponent(factory);
-    }
-
-    destroyComponent() {
-        this.componentRef.destroy();
-    }
+    constructor(private serverService: ServerService, private loaderService: LoaderService) {}
 
     ngOnInit() {
-        this.createComponent();
+        this.componentRef = this.loaderService.createComponent(this.entry);
         this.serverService.getWorkExperience()
+            .pipe(delay(500))
             .subscribe(
                 (response: Response) => {
+                    this.loaderService.destroyComponent(this.componentRef);
                     const data = response.json();
                     this.workExperience = data.workExperience;
-                    this.destroyComponent();
                 },
                 (error) => console.log(error)
             );

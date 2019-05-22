@@ -23,6 +23,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { LoaderComponent } from './loader/loader.component';
+import { LoaderService } from './loader/loader.service';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,7 @@ import { LoaderComponent } from './loader/loader.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [ServerService],
+  providers: [ServerService, LoaderService],
   bootstrap: [AppComponent],
   entryComponents: [LoaderComponent]
 })
