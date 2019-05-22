@@ -52,6 +52,7 @@ import { LoaderComponent } from './loader/loader.component';
     FormsModule
   ],
   providers: [ServerService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [LoaderComponent]
 })
 export class AppModule { }

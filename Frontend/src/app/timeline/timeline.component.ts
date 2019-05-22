@@ -18,7 +18,7 @@ export class TimelineComponent implements OnInit {
       .subscribe(
         (response: Response) => {
           const data = response.json();
-          this.workTimeLine = data.workTimeLine;
+          this.workTimeLine = data.workTimeLine.reverse();
         },
         (error) => console.log(error)
       );
