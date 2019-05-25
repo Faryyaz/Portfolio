@@ -1,4 +1,5 @@
 <div class="row">
+    <ng-template #appLoaderComponent></ng-template>
   <div class=" col-lg-3 col-md-4 col-sm-6" *ngFor="let perProject of personalProjects">
     <div class="card text-center">
         <div class="card-img" *ngIf="perProject.graphic.type === 'image'; else isIcon">

@@ -3,6 +3,8 @@
     <div class="container testimonials">
       <h2 class="text-center text-dark">Testimonials</h2>
       <h6 class="text-center mb-4">People I've worked with have said some nice things...</h6>
+      <div class="loader-placeholder">
+      <ng-template #appLoaderComponent></ng-template>
       <div class="row" *ngFor="let testimonial of testimonials; let i = index">
         <div [ngClass] = "{'col-md-6': true, 'offset-md-1': (i+1)%2 > 0, 'offset-md-5': (i+1)%2 == 0}">
           <div class="card border-0 my-3">
@@ -21,6 +23,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </div>
