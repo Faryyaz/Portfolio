@@ -40,7 +40,7 @@ class CreateProjectsTable extends Migration
             ],
             [
                 'title' => 'GIS',
-                'description' => 'Map representation about KPI data using Google Earth/Map API. Raw data were extracted from monitoring system using SOAP API and passed down into an ETL process.',
+                'description' => 'Map representation about KPI data using Google Earth/Map API. Raw data were extracted from monitoring system using SOAP API and processed(ETL process).',
                 'graphic_type' => 'icon',
                 'graphic_data' => 'fas fa-map',
                 'link' => '',
@@ -62,7 +62,7 @@ class CreateProjectsTable extends Migration
                 'graphic_type' => 'icon',
                 'graphic_data' => 'fas fa-sitemap',
                 'link' => '',
-                'company' => 'Stella Telecom',
+                'company' => 'Stella Telecom Ltd',
                 'type' => 'professional'
             ],
             [
@@ -71,7 +71,7 @@ class CreateProjectsTable extends Migration
                 'graphic_type' => 'icon',
                 'graphic_data' => 'fas fa-cogs',
                 'link' => '',
-                'company' => 'Stella Telecom',
+                'company' => 'Stella Telecom Ltd',
                 'type' => 'professional'
             ],
             [
@@ -80,7 +80,7 @@ class CreateProjectsTable extends Migration
                 'graphic_type' => 'icon',
                 'graphic_data' => 'fas fa-wrench',
                 'link' => '',
-                'company' => 'Stella Telecom',
+                'company' => 'Stella Telecom Ltd',
                 'type' => 'professional'
             ],
             [
@@ -89,7 +89,7 @@ class CreateProjectsTable extends Migration
                 'graphic_type' => 'icon',
                 'graphic_data' => 'fas fa-store',
                 'link' => '',
-                'company' => 'Stella Telecom',
+                'company' => 'Stella Telecom Ltd',
                 'type' => 'professional'
             ],
             [
@@ -98,7 +98,7 @@ class CreateProjectsTable extends Migration
                 'graphic_type' => 'icon',
                 'graphic_data' => 'fas fa-globe',
                 'link' => '',
-                'company' => 'Stella Telecom',
+                'company' => 'Stella Telecom Ltd',
                 'type' => 'professional'
             ],
             [
@@ -125,25 +125,25 @@ class CreateProjectsTable extends Migration
                 'graphic_type' => 'icon',
                 'graphic_data' => 'fas fa-truck-loading',
                 'link' => '',
-                'company' => 'Extension Interactive',
+                'company' => 'Extension Interactive Ltd',
                 'type' => 'professional'
             ],
             [
                 'title' => 'Customer online shop',
-                'description' => 'Web platform allowing customers to subscribed to services/products involving pets. Frontend development within Symphony framework using JQuery/Twig/SASS.',
+                'description' => 'Web platform allowing customers to subscribed to services/products. Frontend development within Symphony framework using JQuery/Twig/SASS.',
                 'graphic_type' => 'icon',
                 'graphic_data' => 'fas fa-store-alt',
                 'link' => '',
-                'company' => 'Extension Interactive',
+                'company' => 'Extension Interactive Ltd',
                 'type' => 'professional'
             ],
             [
-                'title' => 'Hotel websites',
-                'description' => 'Web platform allowing customers to view hotel services. Frontend development within CMS such as Drupal/Prestashop and Wordpress.',
+                'title' => 'General websites',
+                'description' => 'Web platform allowing customers to view various services. Frontend development within CMS such as Drupal/Prestashop and Wordpress.',
                 'graphic_type' => 'icon',
                 'graphic_data' => 'fas fa-building',
                 'link' => '',
-                'company' => 'Extension Interactive',
+                'company' => 'Extension Interactive Ltd',
                 'type' => 'professional'
             ],
 
@@ -158,7 +158,6 @@ class CreateProjectsTable extends Migration
                 'company' => 'Personal | Part time',
                 'type' => 'personal'
             ],
-            //personal
             [
                 'title' => 'Portfolio',
                 'description' => 'Part time development of portfolio containing a compilation of all projects involved. This project was developed using MySQL/SASS/Bootstrap/Angular/TypeScript/Laravel',
