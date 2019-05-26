@@ -30,8 +30,8 @@ class CreateProjectsTable extends Migration
         DB::table('projects')->insert([
             //professional
             [
-                'title' => 'Alchemetrix - Dashboard',
-                'description' => 'Dashboard that provides KPI indications',
+                'title' => 'Dashboard',
+                'description' => 'Graphical representation of KPI data via a web based dashboard developed. An ETL process where data were extracted from XML files present on different network devices.',
                 'graphic_type' => 'icon',
                 'graphic_data' => 'fas fa-chart-line',
                 'link' => '',
@@ -39,19 +39,46 @@ class CreateProjectsTable extends Migration
                 'type' => 'professional'
             ],
             [
-                'title' => 'Alchemetrix - GIS',
-                'description' => 'Map representation about KPI data',
+                'title' => 'GIS',
+                'description' => 'Map representation about KPI data using Google Earth/Map API. Raw data were extracted from monitoring system using SOAP API and passed down into an ETL process.',
                 'graphic_type' => 'icon',
                 'graphic_data' => 'fas fa-map',
                 'link' => '',
                 'company' => 'Emtel Ltd',
                 'type' => 'professional'
             ],
+            [
+                'title' => 'Analytics',
+                'description' => 'Graphical representation of more in-depth KPI. ETL process whereby data are aggregated accordingly using their respective formulas.',
+                'graphic_type' => 'icon',
+                'graphic_data' => 'fas fa-map',
+                'link' => '',
+                'company' => 'Emtel Ltd',
+                'type' => 'professional'
+            ],
+            [
+                'title' => 'Proxy',
+                'description' => 'Graphical representation of domain/sub-domain visited and filtered accordingly. System developed using squid by filtering traffic.',
+                'graphic_type' => 'icon',
+                'graphic_data' => 'fas fa-map',
+                'link' => '',
+                'company' => 'Stella Telecom',
+                'type' => 'professional'
+            ],
+            [
+                'title' => 'Internet Eligibility Test',
+                'description' => 'Web interface whereby user can test if he/she is eligible for internet. API is consumed for every web platform (e.g. Wordpress, etc...)',
+                'graphic_type' => 'icon',
+                'graphic_data' => 'fas fa-map',
+                'link' => '',
+                'company' => 'Stella Telecom',
+                'type' => 'professional'
+            ],
 
             //personal
             [
                 'title' => 'Poke Master',
-                'description' => 'Part time development of a mobile phone game',
+                'description' => 'Part time development of a mobile phone game based on C#.',
                 'graphic_type' => 'image',
                 'graphic_data' => '/assets/img/poke_master.png',
                 'link' => 'https://play.google.com/store/apps/details?id=com.flatxg.pokemaster',

@@ -113,11 +113,13 @@ class Controller extends BaseController
             'textMessage'  => 'required',
         ]);
 
-        \Mail::send('email', $request->all(), function ($message) {
+        $email = env('MY_EMAIL_ADDRESS');
+
+        \Mail::send('email', $request->all(), function ($message) use ($email) {
 
             $message->subject("Portfolio: Email from company");
 
-            $message->to(env('MY_MAIL_ADDRESS'));
+            $message->to($email);
 
         });
 

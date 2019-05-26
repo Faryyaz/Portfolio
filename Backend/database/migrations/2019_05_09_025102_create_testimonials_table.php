@@ -35,7 +35,10 @@ class CreateTestimonialsTable extends Migration
                 'position' => 'Team Leader DevOps',
                 'full_name' => 'Prashant Ramhit',
                 'image' => '/assets/img/prashant.jpg',
-                'description' => 'Faryyaz was a real pleasure to work with and we look forward to work with him again. He’s the kind of developer you can trust with a project from start to finish'
+                'description' => 'On several occasions, I had been involved with Faryyaz for Development projects and Fary (short for Faryyaz) was incredible.
+                Not just in his professionalism and demeanor, but in his clear understanding of how to create great Web Apps – both in content and delivery.
+                Even though the project had a tight delivery, he never showed signs of stress.
+                Fary has good mastery of the tools he has been using for so long and his direction is extremely helpful and he is a Developer who can face any challenge.'
             ]
         ]);
     }
