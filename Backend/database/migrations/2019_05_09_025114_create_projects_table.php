@@ -137,6 +137,15 @@ class CreateProjectsTable extends Migration
                 'company' => 'Extension Interactive',
                 'type' => 'professional'
             ],
+            [
+                'title' => 'Hotel websites',
+                'description' => 'Web platform allowing customers to view hotel services. Frontend development within CMS such as Drupal/Prestashop and Wordpress.',
+                'graphic_type' => 'icon',
+                'graphic_data' => 'fas fa-building',
+                'link' => '',
+                'company' => 'Extension Interactive',
+                'type' => 'professional'
+            ],
 
 
             //personal
