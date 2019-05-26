@@ -152,7 +152,7 @@ class CreateProjectsTable extends Migration
             //personal
             [
                 'title' => 'Portfolio',
-                'description' => 'Part time development of portfolio containing a compilation of all projects involved. Project developed using MySQL/SASS/Bootstrap/Angular/TypeScript/Laravel',
+                'description' => 'Part time development of portfolio containing a compilation of all projects involved. This project was developed using MySQL/SASS/Bootstrap/Angular/TypeScript/Laravel',
                 'graphic_type' => 'icon',
                 'graphic_data' => 'fas fa-id-badge',
                 'link' => 'https://github.com/Faryyaz/Portfolio',
