@@ -61,6 +61,11 @@ $nav-c: 'nav-content';
                 &-bordered {
                     border: 2px solid $color-info;
                 }
+
+                &-text {
+                    color: $color-info !important;
+                    font-weight: 500;
+                }
             }
         }
     }
