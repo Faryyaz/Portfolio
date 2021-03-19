@@ -24,6 +24,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { LoaderComponent } from './loader/loader.component';
 import { LoaderService } from './loader/loader.service';
+import { GetInitialsPipe } from '../pipe/getinitials.pipe';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { LoaderService } from './loader/loader.service';
     HomeComponent,
     TimelineComponent,
     ContactComponent,
-    LoaderComponent
+    LoaderComponent,
+    GetInitialsPipe
   ],
   imports: [
     HttpModule,
@@ -52,7 +54,7 @@ import { LoaderService } from './loader/loader.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [ServerService, LoaderService],
+  providers: [ServerService, LoaderService, GetInitialsPipe],
   bootstrap: [AppComponent],
   entryComponents: [LoaderComponent]
 })

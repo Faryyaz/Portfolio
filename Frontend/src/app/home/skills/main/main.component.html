@@ -4,9 +4,14 @@
     <div class="col-lg-2 col-md-3" *ngFor="let skill of mainSkills">
       <div class="card bg-secondary my-3 card-min border-0">
         <div class="card-body text-white">
-          <i class="{{ skill.classes }} fa-3x"></i>
+          <div class="no-icon" *ngIf="skill.classes === 'no-icon'; else isIcon">
+            {{ skill.title | getInitials }}
+          </div>
+          <ng-template #isIcon>
+            <i class="{{ skill.classes }} fa-3x"></i>
+          </ng-template>
         </div>
-        <div class="card-footer bg-white text-secondary">
+        <div style="text-transform: capitalize" class="card-footer bg-white text-secondary">
           {{ skill.title }}
         </div>
       </div>

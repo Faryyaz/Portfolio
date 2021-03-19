@@ -8,17 +8,33 @@ import { Response } from '@angular/http';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  loading: boolean;
 
   constructor(private serverService: ServerService) { }
 
   ngOnInit() {
-  }
+      this.loading = false;
+   }
 
   onSubmit(form) {
+    this.loading = true;
     this.serverService.sendEmail(form.value)
       .subscribe(
-        (response: Response) => console.log(response),
-        (error) => console.log(error)
+        (response: Response) => {
+            const statusText = response.statusText;
+            const data = response.json();
+            if (statusText === 'OK') {
+                this.loading = false;
+                alert(data.message);
+            }
+        },
+        (error) => {
+            const errorData = error.json();
+            this.loading = false;
+            if (errorData.errors.hasOwnProperty('email')) {
+                alert('The email must be a valid email address.');
+            }
+        }
       );
 
   }

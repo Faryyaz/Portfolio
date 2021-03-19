@@ -1,7 +1,22 @@
+@import 'variables';
+
 .card-min {
     min-width: 120px;
 }
 
 .loader-placeholder {
     min-height: 338px;
+}
+
+.no-icon {
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-secondary;
+    font-size: 35px;
+    font-weight: bold;
 }

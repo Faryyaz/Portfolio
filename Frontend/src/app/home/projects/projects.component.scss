@@ -99,7 +99,7 @@ $nav-c: 'nav-content';
     transition: max-height 0.15s ease-out;
 
     &.active {
-        max-height: 2000px;
+        max-height: 3000px;
         padding: 1.5rem;
         transition: max-height 0.25s ease-in;
     }
